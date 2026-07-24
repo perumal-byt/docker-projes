@@ -8,6 +8,8 @@ app.get('/', (req, res) => {
     res.send("Welcome to this is raj ShopEasy!");
 });
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+module.exports = { app, server };
